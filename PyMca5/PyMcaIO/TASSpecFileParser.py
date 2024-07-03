@@ -42,7 +42,7 @@ class TASSpecFileParser(object):
         while len(line)>1:
             if '=' in line:
                 #key, value = line[:-1].split(' = ')
-                key, value = line.split(' = ')
+                key, value = line.split(' =')
                 _logger.debug(f'READ IN LINE/KEY/VALUE: {line} {key} {value}')
                 #if key == '# scan_title':
                 if key == '# command':

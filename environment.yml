@@ -1,0 +1,16 @@
+name: pymca_testing
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+#    - -r requirements.txt
+    - git+https://github.com/hkl-projects/pymca.git
+    - pandas
+    - PyQt5
+    - pcaspy
+    - qtconsole
+
+
